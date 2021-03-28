@@ -11,7 +11,13 @@ const app = express()
 
 app.use(express.json({ limit: '30mb', extended: true}))
 app.use(express.urlencoded({ limit: '30mb', extended: true}))
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*');
+    next();
+  });
 app.use(cors())
+app.options('*', cors());
+
 
 app.use('/posts', postRoutes)
 app.use('/movies', movieRoutes)
