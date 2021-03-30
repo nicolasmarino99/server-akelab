@@ -7,7 +7,13 @@
   "scripts": {
     "start": "nodemon --experimental-json-modules index.js"
   },
-  "keywords": [],
+  "engines": {
+    "node": "15.12.0"
+  },
+  "keywords": [
+    "example",
+    "heroku"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
