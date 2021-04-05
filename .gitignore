@@ -2,9 +2,9 @@
 
 # dependencies
 /node_modules
-/.pnp
-.pnp.js
-
+npm-debug.log
+.DS_Store
+/*.env
 # testing
 /coverage
 
